@@ -1,0 +1,14 @@
+html{
+    font-size: 70%;
+}
+.plans-container--slider{
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.main-tables-container{
+    overflow: hidden;
+}
+.header--title-container .header--button{
+    height: 60px;
+}
