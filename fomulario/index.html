@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulario con JS||Marco</title>
+  </head>
+  <body>
+    <main class="container" style="font-family: 'Roboto Condensed', sans-serif">
+      <h1>FORMULARIO</h1>
+      <form class="form">
+      
+          <label for="correo">Correo</label>
+          <input type="email" name="email" id="email" />
+              
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto"/>
+        
+          <label for="textarea">Mensaje</label>
+          <textarea name="mensaje" id="textarea" cols="25" rows="6"></textarea>
+          <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+          </div>
+          <div class="buttons">
+            <button class="enviar">
+              Enviar <i class="fas fa-angle-right"></i>
+            </button>
+            <button class="resetear">
+              Resetear <i class="fas fa-trash-alt"></i>
+            </button>        
+          </div>
+      </form>
+    <script
+      src="https://kit.fontawesome.com/b996ce3a29.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
