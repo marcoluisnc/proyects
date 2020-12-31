@@ -1,0 +1,62 @@
+html {
+  font-size: 18px;
+}
+body {
+  background: #03001e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fdeff9,
+    #ec38bc,
+    #7303c0,
+    #03001e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fdeff9,
+    #ec38bc,
+    #7303c0,
+    #03001e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  font-family: "Noto Sans TC", sans-serif;
+  position: relative;
+}
+h1 {
+  text-align: center;
+  padding: 30px;
+  font-size: 3em;
+  color: white;
+}
+main {
+  width: 90%;
+  max-width: 1200px;
+  color: white;
+  margin: 0 auto;
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  background-color: #ffffff52;
+  border-radius: 9px;
+}
+
+.selects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.select {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+select {
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+h2 {
+  text-align: center;
+}

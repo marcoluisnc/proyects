@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Buscador de articulos</title>
+  </head>
+  <body>
+    <h1>BUSCADOR DE ARTICULOS</h1>
+    <main>
+      <div class="selects">
+        <div class="marca-div select">
+          <label for="marca">Marca</label>
+          <select name="marca" id="marca">
+            <option value="Seleccione">Seleccione</option>
+            <option value="Sony">Sony</option>
+            <option value="Logitech">Logitech</option>
+            <option value="Corsair">Corsair</option>
+            <option value="Apple">Apple</option>
+          </select>
+        </div>
+        <div class="tipo-div select">
+          <label for="tipo">Tipo</label>
+          <select name="tipo" id="tipo">
+            <option value="Seleccione">Seleccione</option>
+            <option value="Audifonos">Audifonos</option>
+            <option value="Celulares">Celulares</option>
+            <option value="Bocinas">Bocinas</option>
+            <option value="Teclados">Teclados</option>
+          </select>
+        </div>
+        <div class="precio-min-div select">
+          <label for="precio-min">Precio Minimo</label>
+          <select name="precio-min" id="precio-min">
+            <option value="Seleccione">Seleccione</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+            <option value="1500">1500</option>
+            <option value="2000">2000</option>
+            <option value="2500">2500</option>
+            <option value="4000">4000</option>
+            <option value="5000">5000</option>
+          </select>
+        </div>
+        <div class="precio-max-div select">
+          <label for="precio-max">Precio Maximo</label>
+          <select name="precio-max" id="precio-max">
+            <option value="Seleccione">Seleccione</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+            <option value="1500">1500</option>
+            <option value="2000">2000</option>
+            <option value="2500">2500</option>
+            <option value="4000">4000</option>
+            <option value="5000">5000</option>
+          </select>
+        </div>
+      </div>
+      <div id="resultado">
+        <h2>ARTICULOS</h2>
+      </div>
+    </main>
+
+    <!--JAVASCRIPT-->
+    <script
+      src="https://kit.fontawesome.com/b996ce3a29.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    <script src="db.js"></script>
+  </body>
+</html>
