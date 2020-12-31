@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/gridCards.css" />
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -23,18 +24,24 @@
             <option value="Seleccione">Seleccione</option>
             <option value="Sony">Sony</option>
             <option value="Logitech">Logitech</option>
-            <option value="Corsair">Corsair</option>
+            <option value="Samsung">Samsung</option>
             <option value="Apple">Apple</option>
+            <option value="Skullcandy">Skullcandy</option>
+            <option value="Huawei">Huawei</option>
+            <option value="Huawei">Alienware</option>
           </select>
         </div>
         <div class="tipo-div select">
           <label for="tipo">Tipo</label>
           <select name="tipo" id="tipo">
             <option value="Seleccione">Seleccione</option>
-            <option value="Audifonos">Audifonos</option>
-            <option value="Celulares">Celulares</option>
+            <option value="TV">TV</option>
             <option value="Bocinas">Bocinas</option>
-            <option value="Teclados">Teclados</option>
+            <option value="Celulares">Celulares</option>
+            <option value="Teclado">Teclado</option>
+            <option value="Tablet">Tablet</option>
+            <option value="Audifonos">Audifonos</option>
+            <option value="PC">PC</option>
           </select>
         </div>
         <div class="precio-min-div select">
@@ -61,20 +68,30 @@
             <option value="2500">2500</option>
             <option value="4000">4000</option>
             <option value="5000">5000</option>
+            <option value="6000">6000</option>
+            <option value="7000">7000</option>
+            <option value="10000">10,000</option>
+            <option value="30000">30,000</option>
           </select>
         </div>
       </div>
-      <div id="resultado">
-        <h2>ARTICULOS</h2>
+      <h2>PRODUCTOS</h2>
+
+      <div class="resultado">
+        <table>
+          <thead>
+            <th>Marca</th>
+            <th>Tipo</th>
+            <th>Precio</th>
+          </thead>
+          <tbody></tbody>
+        </table>
       </div>
     </main>
 
     <!--JAVASCRIPT-->
-    <script
-      src="https://kit.fontawesome.com/b996ce3a29.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="app.js"></script>
-    <script src="db.js"></script>
+
+    <script src="javascript/buscador.js"></script>
+    <script src="javascript/db.js"></script>
   </body>
 </html>

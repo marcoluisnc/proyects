@@ -61,3 +61,21 @@ select {
 h2 {
   text-align: center;
 }
+.resultado p {
+  font-size: 1.4em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.466);
+  color: rgb(255, 255, 255);
+}
+.error {
+  padding: 1em;
+  background-color: rgb(255, 80, 80);
+  font-weight: bold;
+  font-size: 1.3em;
+}
+table {
+  width: 100%;
+}
+th,
+td {
+  padding: 20px;
+}
