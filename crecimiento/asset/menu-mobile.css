@@ -1,0 +1,43 @@
+.menu-responsive {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #eff8ff;
+  overflow-x: hidden;
+  transition: all 500ms ease 0s;
+}
+.menu-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu-responsive a {
+  color: #747474;
+  padding: 15px;
+  font-size: 1.4em;
+  display: block;
+  text-decoration: none;
+  transition: all 300ms ease 0s;
+}
+.menu-responsive .close {
+  color: #c9cbff;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+.menu-responsive .iniciar-sesion {
+  padding: 20px;
+  background-color: #c9cbff;
+  border-radius: 9px;
+  color: white;
+}
+.menu-responsive .crear-cuenta {
+  color: #c9cbff;
+}

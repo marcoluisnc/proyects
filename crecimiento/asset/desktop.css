@@ -1,0 +1,39 @@
+.menu {
+  display: none;
+}
+.menu-desktop {
+  display: flex;
+}
+/**HERO 768PX*/
+.container-info {
+  flex-direction: row;
+}
+.text-info,
+.svg-image {
+  width: 50%;
+  padding: 14px;
+}
+/**SECTION*/
+.container-full {
+  flex-direction: row;
+}
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.container-infoCard,
+.image-cont {
+  width: 50%;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .text-info h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container-info button {
+    width: 30%;
+  }
+}

@@ -1,0 +1,38 @@
+header {
+  padding: 20px;
+  font-size: 18px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+}
+.menu-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30%;
+  align-items: center;
+}
+.menu-desktop a {
+  text-decoration: none;
+  color: #989ba8;
+  transition: all 300ms;
+  font-weight: bold;
+}
+.menu-desktop a:hover {
+  color: rgb(49, 49, 49);
+  border-bottom: 2px solid black;
+}
+.cuentas {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cuentas .crear-cuenta {
+  color: #9b9fff;
+  font-weight: bold;
+  padding: 15px;
+  text-decoration: none;
+}
