@@ -25,115 +25,118 @@
     <title>Document</title>
   </head>
   <body style="font-family: 'Roboto', sans-serif">
-    <header>
-      <div class="logo" style="font-weight: bold">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"></path></svg>
-      </div>
-      <span class="menu" onclick="openNav()">
-        <i class="fas fa-bars"></i>
-      </span>
-      <!--MENU MOBILE-->
-      <nav class="menu-responsive">
-        <a href="#" class="close" onclick="closeNav()"
-          ><i class="fas fa-times-circle"></i
-        ></a>
-        <div class="menu-content">
+    <section style="margin: 0;padding: 0;">
+      <header>
+        <div class="logo" style="font-weight: bold">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"></path></svg>
+        </div>
+        <span class="menu" onclick="openNav()">
+          <i class="fas fa-bars"></i>
+        </span>
+        <!--MENU MOBILE-->
+        <nav class="menu-responsive">
+          <a href="#" class="close" onclick="closeNav()"
+            ><i class="fas fa-times-circle"></i
+          ></a>
+          <div class="menu-content">
+            <a href="">Inicio</a>
+            <a href="">Menu</a>
+            <a href="">Noticias</a>
+            <a href="" class="crear-cuenta">Crear Cuenta</a>
+            <a href="" class="iniciar-sesion">Iniciar Sesion</a href="">
+          </div>
+        </nav>
+        <ul class="menu-desktop">
           <a href="">Inicio</a>
           <a href="">Menu</a>
           <a href="">Noticias</a>
+        </ul>
+        <ul class="cuentas">
           <a href="" class="crear-cuenta">Crear Cuenta</a>
-          <a href="" class="iniciar-sesion">Iniciar Sesion</a href="">
-        </div>
-      </nav>
-      <ul class="menu-desktop">
-        <a href="">Inicio</a>
-        <a href="">Menu</a>
-        <a href="">Noticias</a>
-      </ul>
-      <ul class="cuentas">
-        <a href="" class="crear-cuenta">Crear Cuenta</a>
-        <button class="iniciar-sesion btnmor">Iniciar Sesion</button>
-      </ul>
-    </header>
-    <!--HERO-->
-    <div class="hero">
-      <div class="container-info">
-        <div class="text-info">
-          <h1>APLICACION DE DIARIO CRECIMIENTO Y DESARROLLO PERSONAL</h1>
-          <P>Construir habitos y crear objetivos para poder lograr una mejor version de uno mismo.</P>
-          <button class="btnmor">Empezar ahora</button>
-        </div>
-        <div class="svgimage">
-          <img class="svg-first" src="svg/dibujo1.svg" alt="imagen de mujer" srcset="">
-        </div>
-      </div>
-    </div>
-    <!--CARDS-->
-    <div class="container-cards">
-      <div class="cards">
-        <article class="grid-cards">
-          <svg class="w-6 h-6 svg-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
-          <div class="info">
-            <p class="title-card">Titulo</p>
-            <p>sdodjsjd</p>
-          </div>
-        </article>
-        <article class="grid-cards">
-          <svg class="w-6 h-6 svg-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
-          <div class="info">
-            <p class="title-card">Titulo</p>
-            <p>sdodjsjd</p>
-          </div>
-        </article>
-        <article class="grid-cards">
-          <svg class="w-6 h-6 svg-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
-          <div class="info">
-            <p class="title-card">Titulo</p>
-            <p>sdodjsjd</p>
-          </div>
-        </article>
-        <article class="grid-cards">
-          <svg class="w-6 h-6 svg-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
-          <div class="info">
-            <p class="title-card">Titulo</p>
-            <p>sdodjsjd</p>
-          </div>
-        </article>
-      </div>
-    </div>
-    <!--section-->
-    <section class="container-section">
-      <div class="container-full">
-        <div class="image-cont">
-          <img src="svg/dibujo2.svg" alt="imagen de svg" srcset="" width="100%" height="100%">
-        </div>
-        <div class="container-infoCard">
-          <article class="info-card">
-            <h3>Obtener mas informacion</h3>
-            <p>Aqui te ayudaremos a crecer como persona y a descubrir para que has nacido!</p>
+          <button class="iniciar-sesion btnmor">Iniciar Sesion</button>
+        </ul>
+      </header>
+      <!--HERO-->
+      <div class="hero">
+        <div class="container-info">
+          <div class="text-info">
+            <h1>APLICACION DE DIARIO CRECIMIENTO Y DESARROLLO PERSONAL</h1>
+            <P>Construir habitos y crear objetivos para poder lograr una mejor version de uno mismo.</P>
             <button class="btnmor">Empezar ahora</button>
+          </div>
+          <div class="svgimage">
+            <img class="svg-first" src="svg/dibujo1.svg" alt="imagen de mujer" srcset="">
+          </div>
+        </div>
+      </div>
+      <!--CARDS-->
+      <div class="container-cards">
+        <div class="cards">
+          <article class="grid-cards">
+            <svg class="w-6 h-6 svg-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+            <div class="info">
+              <p class="title-card">Titulo</p>
+              <p>sdodjsjd</p>
+            </div>
+          </article>
+          <article class="grid-cards">
+            <svg class="w-6 h-6 svg-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+            <div class="info">
+              <p class="title-card">Titulo</p>
+              <p>sdodjsjd</p>
+            </div>
+          </article>
+          <article class="grid-cards">
+            <svg class="w-6 h-6 svg-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+            <div class="info">
+              <p class="title-card">Titulo</p>
+              <p>sdodjsjd</p>
+            </div>
+          </article>
+          <article class="grid-cards">
+            <svg class="w-6 h-6 svg-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+            <div class="info">
+              <p class="title-card">Titulo</p>
+              <p>sdodjsjd</p>
+            </div>
           </article>
         </div>
       </div>
-    </section>
-    <section class="container-section">
-      <div class="container-full reverse">
-        <div class="image-cont">
-          <img src="svg/dibujo3.svg" alt="imagen de svg" srcset="" width="100%" height="100%">
+      <!--section-->
+      <section class="container-section">
+        <div class="container-full">
+          <div class="image-cont">
+            <img src="svg/dibujo2.svg" alt="imagen de svg" srcset="" width="100%" height="100%">
+          </div>
+          <div class="container-infoCard">
+            <article class="info-card">
+              <h3>Obtener mas informacion</h3>
+              <p>Aqui te ayudaremos a crecer como persona y a descubrir para que has nacido!</p>
+              <button class="btnmor">Empezar ahora</button>
+            </article>
+          </div>
         </div>
-        <div class="container-infoCard">
-          <article class="info-card">
-            <h3>Obtener mas informacion</h3>
-            <p>Aqui te ayudaremos a crecer como persona y a descubrir para que has nacido!</p>
-            <button class="btnmor">Empezar ahora</button>
-          </article>
+      </section>
+      <section class="container-section">
+        <div class="container-full reverse">
+          <div class="image-cont">
+            <img src="svg/dibujo3.svg" alt="imagen de svg" srcset="" width="100%" height="100%">
+          </div>
+          <div class="container-infoCard">
+            <article class="info-card">
+              <h3>Obtener mas informacion</h3>
+              <p>Aqui te ayudaremos a crecer como persona y a descubrir para que has nacido!</p>
+              <button class="btnmor">Empezar ahora</button>
+            </article>
+          </div>
         </div>
-      </div>
+      </section>
     </section>
     
-
     <!--MENU HAMBURGUESA-->
     <script src="js/menuHam.js"></script>
+    <!--NAVBAR-->
+    <script src="js/navbar.js"></script>
     <!--ICONS-->
     <script
       src="https://kit.fontawesome.com/b996ce3a29.js"
