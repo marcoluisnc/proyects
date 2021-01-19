@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+html {
+  font-size: 62.25%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+:root {
+  --gray: #e9ecef;
+  --main-gray: #495057;
+  --violet: rgb(138, 43, 226);
+}
+header.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-main {
+  max-width: 800px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.content-main .icon {
+  width: 80%;
+  margin: 0 auto;
+}
+.content-main .title {
+  margin-top: 30px;
+  font-size: 4.3em;
+}
+.content-main .subtitle {
+  font-size: 2.3em;
+}
+.content-main .button-proyects {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: var(--violet);
+  text-decoration: none;
+  color: white;
+  font-size: 1.7em;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+.button-proyects:hover {
+  box-shadow: 20px 20px 60px #7525c0, -20px -20px 60px #9f31ff;
+  transform: translateY(-10px);
+  background-color: white;
+  color: var(--violet);
+  border: 2px solid var(--violet);
+}
+
+/**PROYECTS CONTAINER*/
+main.proyects-container {
+  width: 100vw;
+  background-color: var(--gray);
+  padding: 40px 0;
+}
+.container-cards {
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+.container-cards h2 {
+  font-size: 2.8em;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+article.proyects-cards {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 20px 20px 60px #c6c9cb, -20px -20px 60px #ffffff;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.text-proyect {
+  padding: 20px;
+  font-size: 1.4em;
+}
+.text-proyect p {
+  margin-top: 15px;
+}
+.text-proyect ul {
+  margin-bottom: 20px;
+}
+.button-link-proyect {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--violet);
+  transition: all 300ms;
+}
+.button-link-proyect:hover {
+  background-color: white;
+  color: var(--violet);
+  border: 2px solid var(--violet);
+}
