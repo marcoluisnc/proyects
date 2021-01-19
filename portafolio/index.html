@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <!--FONTS-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
@@ -13,23 +17,28 @@
   <title>Portafolio: Marco Luis Navez C.</title>
 </head>
 <body>
-  <header class="main">
+  <header class="main animate__animated animate__backInDown">
     <div class="content-main">
       <div class="icon">
-        <img src="assets/header-svg.png" alt="imagen de alguien programando svg" width="100%">
+        <img loading="lazy" src="assets/header-svg.png" alt="imagen de alguien programando svg" width="100%">
       </div>
       <h1 class="title">Marco Luis Navez</h1>
       <p class="subtitle">Web Developer: <mark>HTML5,CSS3,JS🖤</mark></p>
       <a href="#proyects" class="button-proyects">Ir a los proyectos</a>
+      <div class="social-media">
+        <a target="_blank" href="https://twitter.com/marcoluisnavezz"><i class="fab fa-twitter"></i></a>
+        <a target="_blank" href="https://www.instagram.com/marcoluisnavezz/"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
   </header>
+
   <main class="proyects-container" id="proyects">
     <div class="container-cards">
       <h2>Proyectos</h2>
         <h3 id="seccion">Sitios Web con un poco de JS🖤</h3>
       <article class="proyects-cards">
         <div class="img-proyect">
-          <img src="assets/proyecto1.png" alt="proyecto crecimiento propio" width="100%">
+          <img loading="lazy" src="assets/proyecto1.png" alt="proyecto crecimiento propio" width="100%">
         </div>
         <div class="text-proyect">
           <h3>Proyecto con HTML5,CSS3 Y JS</h3>
@@ -45,7 +54,7 @@
       </article>
       <article class="proyects-cards">
         <div class="img-proyect">
-          <img src="assets/proyecto2.png" alt="proyecto crecimiento propio" width="100%">
+          <img loading="lazy" src="assets/proyecto2.png" alt="proyecto crecimiento propio" width="100%">
         </div>
         <div class="text-proyect">
           <h3>Proyecto de bitcoin Landing page</h3>
@@ -60,7 +69,7 @@
       </article>
       <article class="proyects-cards">
         <div class="img-proyect">
-          <img src="assets/proyecto3.png" alt="proyecto crecimiento propio" width="100%">
+          <img loading="lazy" src="assets/proyecto3.png" alt="proyecto crecimiento propio" width="100%">
         </div>
         <div class="text-proyect">
           <h3>Landing Page</h3>
@@ -78,7 +87,7 @@
       <h3 id="seccion2" style="margin-top: 30px;">Sitios web con mas JS que el anterior</h3>
       <article class="proyects-cards">
         <div class="img-proyect">
-          <img src="assets/proyectoJS.png" alt="proyecto crecimiento propio" width="100%">
+          <img loading="lazy" src="assets/proyectoJS.png" alt="proyecto crecimiento propio" width="100%">
         </div>
         <div class="text-proyect">
           <h3>Validacion de formulario</h3>
@@ -94,5 +103,6 @@
       </article>
     </div>
   </main>
+  <script src="https://kit.fontawesome.com/b996ce3a29.js" crossorigin="anonymous"></script>
 </body>
 </html>
