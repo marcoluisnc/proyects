@@ -70,7 +70,9 @@ main.proyects-container {
   min-width: 300px;
   margin: 0 auto;
 }
-.container-cards h2 {
+.container-cards h2,
+#seccion,
+#seccion2 {
   font-size: 2.8em;
   margin-bottom: 30px;
   margin-left: 20px;
@@ -82,6 +84,7 @@ article.proyects-cards {
   box-shadow: 20px 20px 60px #c6c9cb, -20px -20px 60px #ffffff;
   padding: 30px;
   margin-bottom: 30px;
+  border-radius: 10px;
 }
 .text-proyect {
   padding: 20px;
@@ -92,6 +95,9 @@ article.proyects-cards {
 }
 .text-proyect ul {
   margin-bottom: 20px;
+}
+.text-proyect ul li {
+  padding: 5px;
 }
 .button-link-proyect {
   padding: 10px;
