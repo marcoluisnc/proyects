@@ -17,7 +17,6 @@ function eventsListeners() {
 //*FUNCIONES
 //funcion que agrega la nota
 function agregarNota(e) {
-  limpiarHTML();
   //se trae la info que se escribio del textarea
   const textarea = document.querySelector("#notes").value;
   e.preventDefault();
