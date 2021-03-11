@@ -81,6 +81,7 @@ function addToCart(e) {
     const card = e.target.parentElement.parentElement;
     getInfo(card);
   }
+  e.stopPropagation();
 }
 function getInfo(card) {
   //Crear objeto que almacene toda la info de la card
@@ -96,8 +97,8 @@ function getInfo(card) {
   if (exist) {
     //Actualizar la cantidad
     const curso = articulos.map((cursos) => {
-      //Si el titulo es igual que al que se le dio click
-      if (cursos.title === infoCard.title) {
+      //Si el id es igual que al que se le dio click
+      if (cursos.id === infoCard.id) {
         //Aumentar cantidad
         cursos.cantidad++;
         return cursos;
