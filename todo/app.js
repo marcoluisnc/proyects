@@ -1,95 +1,100 @@
-const form = document.querySelector(".form");
-const btnAdd = document.querySelector(".add");
-const btnDel = document.querySelector(".delete");
-const lista = document.querySelector(".lista");
+//Variables
 let notes = [];
+const form = document.querySelector("form");
+const input = document.querySelector("#text");
+const buttonDel = document.querySelector('input[type="button"]');
+const container = document.querySelector(".container");
+const app = document.querySelector("#app");
+const notesList = document.querySelector("#notes-list ul");
 
-//*eventos
-eventsListeners();
-function eventsListeners() {
-  form.addEventListener("submit", agregarNota);
-  document.addEventListener("DOMContentLoaded", () => {
-    notes = JSON.parse(localStorage.getItem("notas")) || [];
-    crearHTML();
-  });
-  btnDel.addEventListener("click", borrar);
-}
-//*FUNCIONES
-//funcion que agrega la nota
-function agregarNota(e) {
-  //se trae la info que se escribio del textarea
-  const textarea = document.querySelector("#notes").value;
-  e.preventDefault();
-  if (textarea === "") {
-    mostrarError("Error, no puedes agregar notas vacias:(");
-    return; //evita que se ejecute el codigo de abajo
+//clases
+class UI {
+  mostrarMensaje(mensaje, css) {
+    const div = document.createElement("div");
+    div.textContent = mensaje;
+    div.className = `alert alert-${css} mt-5 text-center`;
+
+    const error = document.querySelectorAll(".alert");
+    if (error.length === 0) {
+      container.insertBefore(div, app);
+    }
+    setTimeout(() => {
+      div.remove();
+    }, 3000);
   }
-  noteObj = {
+  agregarNota(nota) {
+    //Limpiar el primer elemento
+    while (notesList.firstChild) {
+      notesList.removeChild(notesList.firstChild);
+    }
+    nota.forEach((note) => {
+      //variables
+      const li = document.createElement("li");
+      const btn = document.createElement("a");
+      const { input, id } = note;
+      li.textContent = input;
+      li.style.listStyle = "none";
+      li.className = "alert alert-info ml-0 ";
+      btn.dataset.id = id;
+      btn.className = "btn btn-danger buttonDel";
+      btn.textContent = "X";
+      btn.onclick = () => {
+        eliminarNota(id);
+      };
+      li.appendChild(btn);
+      notesList.appendChild(li);
+    });
+    sincronizarStorage();
+  }
+  eliminarNota(id) {
+    notes = notes.filter((note) => note.id !== id);
+  }
+}
+
+//eventos
+eventListeners();
+function eventListeners() {
+  form.addEventListener("submit", agregarNota);
+  buttonDel.addEventListener("click", borrarTodo);
+
+  document.addEventListener("DOMContentLoaded", () => {
+    notes = JSON.parse(localStorage.getItem("notes")) || [];
+    ui.agregarNota(notes);
+  });
+}
+
+//Declaracion de clase
+const ui = new UI();
+
+//funciones
+function agregarNota(e) {
+  e.preventDefault();
+  //Validaciones de input
+  if (input.value === "") {
+    ui.mostrarMensaje("No puede ir una nota vacia", "danger");
+    return;
+  }
+  //construccion del objeto para el id y el valor del input
+  const noteObj = {
+    input: input.value,
     id: Date.now(),
-    note: textarea,
   };
+  //Spread operator para poder obtener el objeto en un array
   notes = [...notes, noteObj];
-  console.log(notes);
-  //se crea el html
-  crearHTML();
+  ui.agregarNota(notes);
   form.reset();
 }
-//funcion que borra todo
-//funcion que muestra el error
-function mostrarError(texto) {
-  const p = document.createElement("p");
-  p.textContent = texto;
-  p.classList.add("mostrar-error");
-  p.classList.add("error");
-  const error = document.querySelectorAll(".error");
-  if (error.length === 0) {
-    form.appendChild(p);
-  }
-  //se eliminara en 3segs
-  setTimeout(() => {
-    form.removeChild(p);
-  }, 3000);
+//Funcion que elimina la nota
+function eliminarNota(id) {
+  ui.eliminarNota(id);
+  ui.agregarNota(notes);
 }
-//creacion del html
-function crearHTML(e) {
-  limpiarHTML();
-  if (notes.length > 0) {
-    notes.forEach((note) => {
-      //agregar boton de eliminar al li
-      const btnX = document.createElement("a");
-      btnX.classList.add("borrar");
-      btnX.innerText = "x";
-      //funcion que elimina
-      btnX.onclick = () => {
-        borrarNota(note.id);
-      };
-      //Crear la lista de notas
-      const li = document.createElement("li");
-      li.innerText = note.note;
-      lista.appendChild(li);
-      li.appendChild(btnX);
-    });
-  }
-  sincronizarStorage();
-}
-//borrar notas por separado
-function borrarNota(id) {
-  //Se reasigna el arreglo menos el que se le dio click
-  notes = notes.filter((note) => note.id !== id);
-  crearHTML();
-}
-//limpiar arreglo de notes para que no se vuelva a agregar
-function limpiarHTML() {
-  while (lista.firstChild) {
-    lista.removeChild(lista.firstChild);
-  }
-}
-//borrar todas las notas
-function borrar() {
+//Borrar todo
+function borrarTodo() {
   notes = [];
-  crearHTML();
+  ui.agregarNota(notes);
 }
-//funcion sincronizar en local storage
+//localStorage
 function sincronizarStorage() {
-  localStorage.setItem("notas", JSON.stringify(notes));
+  localStorage.setItem("notes", JSON.stringify(notes));
 }
