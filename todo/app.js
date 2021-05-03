@@ -34,7 +34,7 @@ class UI {
       const { input, id } = note;
       li.textContent = input;
       li.style.listStyle = "none";
-      li.className = "alert alert-info ml-0 ";
+      li.className = "alert alert-secondary ml-0 ";
       btn.dataset.id = id;
       btn.className = "btn btn-danger buttonDel";
       btn.textContent = "X";
@@ -70,7 +70,7 @@ const ui = new UI();
 function agregarNota(e) {
   e.preventDefault();
   //Validaciones de input
-  if (input.value === "") {
+  if (input.value.length == 0) {
     ui.mostrarMensaje("No puede ir una nota vacia", "danger");
     return;
   }
